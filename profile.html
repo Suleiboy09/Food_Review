@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Review Blog</title>
-    <!-- Font Awesome for icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
+    <!-- SECTION 1: HEADER & NAVIGATION -->
+    <header class="main-header">
         <div class="logo-container">
             <img src="new-removebg-preview.png" alt="Logo" class="logo-img">
             <span class="logo-text">Food Review Blog</span>
         </div>
         <nav class="nav-pill">
             <a href="#" class="nav-link">Newsfeed</a>
-            <a href="#" class="nav-link">Resturants</a>
+            <a href="#" class="nav-link">Restaurants</a>
             <a href="#" class="nav-link active">Profile</a>
             <a href="#" class="nav-link">Logout</a>
         </nav>
     </header>
 
-    <!-- Divider Section -->
-    <div class="divider-section">
+    <!-- SECTION 2: DIVIDER -->
+    <section class="divider-section">
         <div class="divider-line"></div>
-        <div class="divider-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="divider-icon">
+            <i class="fa-solid fa-users"></i>
+        </div>
         <div class="divider-line"></div>
-    </div>
+    </section>
 
-    <!-- User Profile Section -->
-    <div class="profile-container">
+    <!-- SECTION 3: USER PROFILE BLOCK -->
+    <section class="profile-container">
         <div class="profile-left">
             <div class="profile-img-container">
-                <img src="cut.jpg" alt="Profile" class="profile-img">
+                <img src="cut.jpg" alt="Profile Picture" class="profile-img">
             </div>
             <div class="rating-stars">
                 <i class="fa-solid fa-star"></i>
@@ -47,7 +49,7 @@
             </div>
             <h2 class="user-name">Md. Majharul Islam</h2>
             <p class="user-bio">
-                This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius vel tempore consectetur nesciunt?
+                Passionate food enthusiast, reviewer, and culinary explorer sharing top dining experiences and recommendations.
             </p>
         </div>
         
@@ -65,40 +67,116 @@
                 <span>Edit Post.</span>
             </a>
         </div>
-    </div>
+    </section>
 
-    <!-- Middle Section: Recent Activity -->
+    <!-- SECTION 4: RECENT ACTIVITY (INFINITE CAROUSEL) -->
     <main class="middle-section">
         <div class="section-title">
             <span>Recent Activity</span>
             <i class="fa-regular fa-newspaper"></i>
         </div>
-        <div class="activity-grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="new 2.jpg" alt="Sandwich" class="card-img">
-                <a href="#" class="see-more">See more</a>
-            </div>
-            <!-- Card 2 (Fries & Burger) -->
-            <div class="card">
-                <img src="burger.jpg" alt="Burger and Fries" class="card-img">
-                <a href="#" class="see-more">See more</a>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="white big.jpg" alt="Meal Plate" class="card-img">
-                <a href="#" class="see-more">See more</a>
+
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <!-- SET 1 (6 Items) -->
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="new 2.jpg" alt="Sandwich">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="burger.jpg" alt="Burger and Fries">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="white big.jpg" alt="Meal Plate">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="spagg.jpg" alt="Pizza">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="pizza.jpg" alt="Spaghetti">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="sharwarma.jpg" alt="Gourmet Burger">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+
+                <!-- SET 2 (Exact Duplicate of Set 1 for Infinite Continuous Loop) -->
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="suya.jpg" alt="Sandwich">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="milk.jpg" alt="Burger and Fries">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="white big.jpg" alt="Meal Plate">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="sharwarma.jpg" alt="Pizza">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="spagg.jpg" alt="Spaghetti">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
+                <div class="food-card">
+                    <div class="image-wrapper">
+                        <img src="more.jpg" alt="Gourmet Burger">
+                    </div>
+                    <span class="see-more">See more</span>
+                </div>
+
             </div>
         </div>
     </main>
 
-    <!-- Footer Section -->
+    <!-- SECTION 5: FOOTER -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
                 <img src="new-removebg-preview.png" alt="Footer Logo" class="footer-logo">
                 <p class="footer-desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, tenetur.
+                    Discovering the best local dishes, gourmet treats, and dining locations near you.
                 </p>
                 <div class="social-icons">
                     <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
@@ -140,7 +218,7 @@
         </div>
 
         <div class="footer-bottom">
-            <span>Copyright © 2022 <span class="highlight-text">Majharul</span>. All Rights Reserved.</span>
+            <span>Copyright © 2026 <span class="highlight-text">Majharul</span>. All Rights Reserved.</span>
             <a href="#" class="scroll-top"><i class="fa-solid fa-chevron-up"></i></a>
         </div>
     </footer>
